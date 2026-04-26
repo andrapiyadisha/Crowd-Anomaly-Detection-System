@@ -31,8 +31,8 @@ st.markdown("""
 st.markdown('<p class="big-title">🚨 AI Smart Surveillance Dashboard</p>', unsafe_allow_html=True)
 
 # ---------------- LOAD MODELS ----------------
-weapon_model = YOLO("model/weapon_model.pt")
-crowd_model = YOLO("https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8n.pt")
+weapon_model = YOLO("yolov8n.pt")
+crowd_model = YOLO("yolov8n.pt")
 
 # ✅ ONLY ALLOW THESE WEAPONS
 WEAPON_CLASSES = ["pistol", "knife"]
